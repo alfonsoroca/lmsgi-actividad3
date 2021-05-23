@@ -9,35 +9,57 @@
             
             <body>
             
-            <h1 style="color:red"><xsl:value-of select="ite/@nombre"/></h1>
+            <h1 style="color:blue"><xsl:value-of select="ite/@nombre"/></h1>
             
-            <xsl:for-each select="ite/profesores/profesor">
-                <p>			
-                   
-                    Nombre: <xsl:value-of select="nombre"/>
-                    <br />
-                    ID: <xsl:value-of select="id"/>
-                    <br/>
-                    
+            <div>
+                <h2>Director:</h2>
+                <p>
+                    Nombre: <xsl:value-of select="ite/director/nombre"/>
+                    Despacho: <xsl:value-of select="ite/director/despacho"/>
                 </p>
-            </xsl:for-each>
+                <h2>Jefe de Estudios:</h2>
+                <p>
+                    Nombre: <xsl:value-of select="ite/jefe_estudios/nombre"/>
+                    Despacho: <xsl:value-of select="ite/jefe_estudios/despacho"/>
+                </p>
+            </div>
 
-            <table border="1">
-                <tr>
-                    <th>Ciclo</th>
-                    <th>Nombre</th>
-                    <th>Tipo</th>
-                    <th>Año Decreto</th>
-                </tr>
-                <xsl:for-each select="ite/ciclos/ciclo">
+            <div>
+                <h2>Profesores:</h2>
+                <table border="1">
                     <tr>
-                        <td><xsl:value-of select="@id"/></td>
-                        <td><xsl:value-of select="nombre"/></td>
-                        <td><xsl:value-of select="grado"/></td>
-                        <td><xsl:value-of select="decretoTitulo/@año"/></td>
+                        <th>Nombre</th>
+                        <th>ID</th>
                     </tr>
-                </xsl:for-each>
-            </table>
+                    <xsl:for-each select="ite/profesores/profesor">
+                        <tr>
+                            <td><xsl:value-of select="nombre"/></td>
+                            <td><xsl:value-of select="id"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <br/>
+            </div>
+
+            <div>
+                <table border="1">
+                    <tr>
+                        <th>Ciclo</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Año Decreto</th>
+                    </tr>
+                    <xsl:for-each select="ite/ciclos/ciclo">
+                        <tr>
+                            <td><xsl:value-of select="@id"/></td>
+                            <td><xsl:value-of select="nombre"/></td>
+                            <td><xsl:value-of select="grado"/></td>
+                            <td><xsl:value-of select="decretoTitulo/@año"/></td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+            </div>
+
             </body>
         </html>
 	</xsl:template>
