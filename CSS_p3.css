@@ -45,17 +45,12 @@ nav li:hover{
     color:#000;
     z-index: 10;
 }
-            
-nav li>ul{
-    display:none;
-    padding-left: 15px;
-}
 
 h1{
     margin: 0em auto;
     padding: 2em;
     text-align: center;
-    background-color: #6573ff;;
+    background-color: #6573ff;
 }
 
 h2{
@@ -75,9 +70,13 @@ footer {
 table{    
     margin: 1em auto;
     background-color: honeydew;
-    border-width: 0.25em;
+    border: 0.25em;
     border-style: solid;
     border-color: maroon;
+}
+
+caption{
+    padding-bottom: 0.5em;
 }
 
 th{
@@ -85,7 +84,11 @@ th{
 }
 
 td{
+    text-align: center;
     padding: 1em;
+    border-top: 0.15em;
+    border-style: solid;
+    border-color: maroon;
 }
 
 ul{
@@ -96,6 +99,40 @@ li{
     margin: 1em;
 }
 
+fieldset {
+    margin: 1.5em auto;
+    background-color: #ccc;    
+}
+
+select{
+    margin: 2em auto;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+
+.labelstrong {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.textinput {
+    margin: 1em auto;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;   
+}
+
 .li_clean{
     text-align: justify;
     padding-left: 0px; /*Por defecto tiene 40 de padding-left*/
@@ -103,5 +140,17 @@ li{
 }
 
 .center{
+    margin: 0em auto;
+}
+
+#validacion{
     text-align: center;
+}
+
+#submit {
+    background-color: #5f5f5f;
+    color: white;
+    font-weight: bold;
+    border-radius: 1em;
+    padding: 0.8em;
 }

@@ -25,8 +25,7 @@
                         <ul>
                             <li><a href="#1">Estudios del centro</a></li>
                             <li><a href="#2">Equipo humano</a></li>
-                            <li><a href="news.html">Noticias</a></li>
-                            <li><a href="quienes-somos.html">Quienes somos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
                         </ul> 
                     </nav>
 
@@ -83,7 +82,8 @@
                                             <xsl:value-of select="/ite/director/nombre" />
                                             <ul>
                                                 <li_clean>
-                                                    Dpcho:
+                                                    Dpcho:       
+
                                                     <xsl:value-of select="ite/director/despacho" />
                                                 </li_clean>
                                             </ul>
@@ -139,9 +139,7 @@
                                 <xsl:value-of select="/ite/@web" />
                             </xsl:attribute>
                             <xsl:value-of select="/ite/@nombre"/>
-                        </a>
-  
-  
+                        </a>  
                     </footer>
                 </div>
             </body>
