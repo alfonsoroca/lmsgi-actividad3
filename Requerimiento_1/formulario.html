@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css"/> 
+    </head>
+    <body>
+        <div id="contenedor">
+            <header>
+                <h1>Formulario Admision</h1>
+            </header>
+        <section>
+            <form action="procesa.jsp" method="get" id="formulario">
+        
+                <!-- En este bloque vamos a recoger los datos de contacto de la persona interesada en nuestros servicios-->
+                <fieldset>
+                    <label>Datos de contacto</label>
+                    <br/>
+                        <label for="nombre">Nombre y Apellidos</label>
+                            <input id="nombre" type="text" name="name" autofocus placeholder="Nombre y apellidos" required/>
+                        <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Email de contacto" required/>
+                        <label for="telefono">Teléfono de contacto</label>
+                            <input id="telefono" type="telefono" name="telefono" placeholder="Teléfono de contacto"required/>      
+            </fieldset>
+        
+            <!-- En este bloque el cliente va a elegir el idioma sobre el que quiere realizar el curso.-->
+            <fieldset>
+                <label  for="cursos">Seleccione el curso sobre el que deseas recibir información</label>
+                    <br/>
+                    <select name="cursos">
+                        <option value="asir">Asir</option>
+                        <option value="daw">Daw</option>
+                        <option value="dam">Dam</option>             
+                    </select>
+                    <br/>
+            </fieldset>
+        
+                <!-- En este bloque vamos a recoger los servicios en los que se encuentra interesado el cliente y solicita más información de los mismos-->
+                <fieldset>
+                    <label  for="servicios">Selecciona los servicios sobre los que deseas recibir más información</label>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" name="servicios" value="CA" />Cursos Anuales</td>
+                                <td><input type="checkbox" name="servicios" value="CI" />Cursos Intensivos</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="servicios" value="CP" />Clases Particulares</td>
+                                <td><input type="checkbox" name="servicios" value="CE" />Cursos para Empresas</td>
+                            </tr>
+                        </table>
+                        <br/>
+                </fieldset>
+        
+                <!-- En este bloque vamos a recoger cómo nos conoció el cliente-->
+                <fieldset>
+                    <label for="conociste">Indica cómo nos conociste</label>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td><input type="radio" name="conociste" value="IN" />Internet</td>
+                                <td><input type="radio" name="conociste" value="MI" />Medios impresos</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="conociste" value="VI" />Viste las instalaciones</td>
+                                <td><input type="radio" name="conociste" value="RC" />Referencia de conocidos</td>
+                            </tr>
+                        </table>
+                        <br/>
+                </fieldset>
+        
+                <!-- En este bloque vamos a permitir que el cliente pueda hacernos llegar observaciones que no se encuentran recogidas en los bloques anteriores-->
+            
+                <fieldset>
+                    <label class="labelstrong" for="observaciones">Otras observaciones</label>
+                    <br/>
+                        <textarea class="textinput" name="observaciones" placeholder="Escribe las observaciones que quieras hacernos llegar"></textarea>                
+                </fieldset>
+        
+                <!-- En este bloque vamos recoger la aceptación de todo el clausulado legal vigente, el link que le lleva a la política de privacidad de la web y el botón para el envío del formulario-->
+                <fieldset id="validacion" class="center">
+                    <input type="checkbox" name="terminos" value="Y" required/>
+                    <label for="terminos">He leido y acepto los terminos de uso y la política de privacidad</label>
+                    <br/>
+                    <input id="submit" type="submit" value="Enviar formulario"/>
+                </fieldset>
+            </form>
+        </section>
+        <h2><a  href="ejemplo.xml">Pagina de Inicio</a></h2>
+
+        <footer>
+            <p>Copyright 2021</p>
+        </footer>
+    </div>
+    </body>
+</html>
