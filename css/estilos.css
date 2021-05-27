@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    background-position: center;    
+}
+
+div{
+    border: solid midnightblue 3px;
+    
+    padding: 2em;
+    margin: 10px;
+    background-color:grey;
+    border-radius: 1em;
+}
+
+#section_left{
+    margin: 1em;
+    float: left;
+    width: 44%;
+    height: 200px;
+    text-align: center;
+}
+
+#section_right{
+    margin: 1em;
+    float: right;
+    width: 44%;
+    height: 200px;
+    text-align: center;
+}
+
+#div_fs{
+    max-width: 94%;
+    height: 200px;
+    text-align: center;
+}
+
+
+
+h1 {
+    max-width: 75%;
+    font-size: 3em;
+    color: mediumpurple;
+    margin: 0.75em auto;
+    float: none;
+    text-align: center;
+    background-color:midnightblue;
+    border-radius: 1em;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0.75em auto;
+    max-width: 200px;
+    text-align: center;
+    background-color:lightseagreen;
+    border-radius: 1em;
+}
+
+#nav-normal{
+    margin: 10px;
+    border: 10px;
+    padding: 1px;
+    background-color:midnightblue;
+    border-radius: 1em;  
+}
+
+ul{
+    text-align: justify;
+    margin: 0 auto;
+    padding-left: 0px; /*Por defecto tiene 40 de padding-left*/
+    list-style: none; /*Para quitar los bullets*/
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:18px;
+}
+            
+nav li{
+    float: none;
+    display:inline-block;
+    flex-grow: 1;
+    width: 135px;
+    height: 25px;
+    padding: 5px;
+    border: solid 3px;
+    border-color: midnightblue;
+    border-radius: 1em;
+    background-color:midnightblue;
+    text-align:center;
+    color:#fff;
+    position:relative;/*Esta es muy importante para que funcione correctamente*/
+}
+            
+nav li:hover{
+    border-color: black;
+    background-color:lightseagreen;
+    color:#000;
+    z-index: 10;
+}
+            
+nav li>ul{
+    display:none;
+    padding-left: 15px;
+}
+
+nav li:hover>ul{
+    display:block;
+    position:absolute;
+    top:30px;
+    left:0px;
+    z-index: 10;
+}
+
+table, tr, th, td {
+    border: solid lightseagreen 3px;
+    background-color: mediumpurple;
+    border-collapse: collapse;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
