@@ -23,6 +23,11 @@ nav{
     background-color:#CCC;
 }
 
+nav a{
+    text-decoration:none;
+    color:inherit;
+}
+
 nav li{    
     float: none;
     display:inline-block;    
@@ -33,7 +38,7 @@ nav li{
     border: solid 3px;
     border-color: midnightblue;
     border-radius: 1em;
-    background-color:#CCC;
+    background-color:mediumpurple;
     text-align:center;
     color:#fff;
     position:relative;/*Esta es muy importante para que funcione correctamente*/
