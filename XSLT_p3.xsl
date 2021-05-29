@@ -23,6 +23,7 @@
 
                     <nav>
                         <ul>
+                            <!-- Creación de una lista desordenada y 3 enlaces para dar cumplimiento a los requerimientos de la actividad-->
                             <li><a href="#1">Estudios del centro</a></li>
                             <li><a href="#2">Equipo humano</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
@@ -33,6 +34,7 @@
                         <article>                            
                             <h2 id="1">Estudios del centro</h2>
 
+                            <!-- Creación de una tabla para dar cumplimiento a los requerimientos de la actividad-->
                             <table>
                                 <caption>
                                     <h3>Ciclos formativos</h3>
@@ -72,12 +74,14 @@
                         <article>
                             <h2 id="2">Equipo Humano</h2>
 
+                            <!-- Creación de una tabla para dar cumplimiento a los requerimientos de la actividad-->
                             <table>
                                 <caption>
                                     <h3>Director</h3>
                                 </caption>
                                 <tr>
-                                    <ul>
+                                    <!-- Creación de una lista desordenada para dar cumplimiento a los requerimientos de la actividad-->
+                                    <ul>                                        
                                         <li>
                                             <xsl:value-of select="/ite/director/nombre" />
                                             <ul>
@@ -92,11 +96,13 @@
                                 </tr>
                             </table>
 
+                            <!-- Creación de una tabla para dar cumplimiento a los requerimientos de la actividad-->
                             <table>
                                 <caption>
                                     <h3>Jefe de Estudios</h3>
                                 </caption>
                                 <tr>
+                                    <!-- Creación de una lista desordenada para dar cumplimiento a los requerimientos de la actividad-->
                                     <ul>
                                         <li>
                                             <xsl:value-of select="/ite/jefe_estudios/nombre" />
@@ -111,11 +117,13 @@
                                 </tr>
                             </table>
 
+                            <!-- Creación de una tabla para dar cumplimiento a los requerimientos de la actividad-->
                             <table>
                                 <caption>
                                     <h3>Profesorado</h3>
                                 </caption>
                                 <tr>
+                                    <!-- Creación de una lista desordenada para dar cumplimiento a los requerimientos de la actividad-->
                                     <ul>
                                         <!-- Como la etiqueta "ciclo" aparece varias veces debemos iterarla-->
                                         <xsl:for-each select="/ite/profesores/profesor">
@@ -134,6 +142,7 @@
 
                     <footer>
                         Copyright 2021 -
+                        <!-- Creación de un enlace para dar cumplimiento a los requerimientos de la actividad-->
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of select="/ite/@web" />
